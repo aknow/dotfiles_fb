@@ -1,0 +1,22 @@
+[color]
+  ui = auto
+[http]
+  proxy = fwdproxy:8080
+[https]
+  proxy = fwdproxy:8080
+[core]
+  editor = vim
+[github]
+  user = aknow
+[alias]
+  lo = log --oneline
+  br = branch
+  df = diff
+  dt = difftool
+  mt = mergetool
+  st = status
+  co = checkout
+  ci = commit
+  cp = cherry-pick
+  showt = "!f() { git dt $1^ $1; }; f"
+  files = "!f() { git diff --name-status $1^ $1; }; f"
